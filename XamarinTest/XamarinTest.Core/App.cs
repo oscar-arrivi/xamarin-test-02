@@ -1,10 +1,14 @@
-﻿using System;
+﻿using MvvmCross.ViewModels;
+using XamarinTest.Core.ViewModels;
+
 namespace XamarinTest.Core
 {
-    public class App
+    public class App: MvxApplication
     {
-        public App()
+        public override void Initialize()
         {
+            
+            RegisterAppStart<MainViewModel>();
         }
     }
 }
