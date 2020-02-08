@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+    >
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingHorizontal="12dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="24dp"
+		android:background="@color/colorPrimaryDark">
+		<android.support.design.card.MaterialCardView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"/>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/input_view_textcolor"
+			android:text="@string/add_text_info"/>
+		<EditText
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+            android:minHeight="40dp"
+			app:MvxBind="Text NewWord"
+			android:inputType="textCapSentences"
+			android:background="@android:color/white"
+			android:layout_marginTop="8dp"
+			android:layout_marginBottom="8dp"
+        />
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/add_text_action"
+			android:textColor="@color/input_view_textcolor"
+			app:MvxBind="Click AddNewWordClickCommand;Enabled HasNewWord"
+			android:background="@color/colorAccent"
+        />
+	</LinearLayout>
+</android.support.design.card.MaterialCardView>
